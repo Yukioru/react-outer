@@ -1,5 +1,4 @@
 # react-outer
-React component for handling outside clicks. Inspired by [reactstrap](https://github.com/reactstrap/reactstrap). 
 
 [![npm version](https://img.shields.io/npm/v/react-outer.svg?style=flat-square)](https://www.npmjs.com/package/react-outer)
 
@@ -29,32 +28,28 @@ Outer.propTypes = {
 ## Example
 
 ```js
-import React, { Component } from 'react';
-import Outside from 'react-outer';
+import React, { PureComponent } from 'react';
+import Outer from 'react-outer';
+import Wrapper from '../Wrapper';
 
-export default class CustomDropdown extends Component {
-    
-  constructor(props) {
-    super(props);
-    this.handleOutsideClick = this.handleOutsideClick.bind(this);
-  }
-  
-  handleOutsideClick(e) {
+class Example extends PureComponent {
+  handleOuter(e) {
     // ...
   }
   
   render() {
     return (
-      <Outside
-        tag="ul"
-        className="dropdown-menu"
-        onClickOutside={this.handleOutsideClick}
+      <Outer
+        tag={Wrapper}
+        onClickOutside={this.handleOuter}
       >
-        <li>Items..</li>
-      </Outside>
+        items...
+      </Outer>
     );
   }
 }
+
+export default Example;
 ``` 
 
 ## License
