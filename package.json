@@ -1,6 +1,6 @@
 {
-  "name": "react-outside-component",
-  "version": "0.1.3",
+  "name": "react-outer",
+  "version": "0.0.2",
   "description": "React component for handling outside clicks",
   "main": "lib/index.js",
   "files": [
@@ -8,40 +8,41 @@
     "src"
   ],
   "scripts": {
-    "clean": "rimraf lib",
+    "clean": "rm -rf lib/",
     "build": "babel src --out-dir lib",
     "prepublish": "yarn run clean && yarn run build"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/fantua/react-outside-component.git"
+    "url": "https://github.com/yukioru/react-outer.git"
   },
   "keywords": [
     "react",
+    "outer",
     "outside",
-    "component",
     "click",
-    "event"
+    "event",
+    "blur"
   ],
-  "homepage": "https://github.com/fantua/react-outside-component",
-  "author": "Igor Machuzhak <ihor3000@gmail.com>",
+  "homepage": "https://github.com/yukioru/react-outer",
+  "author": "Andrey Kondalov <obt195@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
-    "react": "^16.1.1",
-    "react-dom": "^16.1.1",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
     "rimraf": "^2.6.2"
   },
   "dependencies": {
-    "lodash": "^4.17.4",
-    "prop-types": "^15.6.0"
+    "lodash": "^4.17.10",
+    "prop-types": "^15.6.1"
   },
   "peerDependencies": {
-    "react": "^15.4.x || ^16.x",
-    "react-dom": "^15.4.x || ^16.x"
+    "react": "^16.x",
+    "react-dom": "^16.x"
   }
 }
