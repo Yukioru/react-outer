@@ -1,4 +1,4 @@
-# react-outside-component
+# react-outer
 React component for handling outside clicks. Inspired by [reactstrap](https://github.com/reactstrap/reactstrap). 
 
 [![npm version](https://img.shields.io/npm/v/react-outer.svg?style=flat-square)](https://www.npmjs.com/package/react-outer)
